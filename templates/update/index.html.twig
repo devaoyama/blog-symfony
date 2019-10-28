@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}更新{% endblock %}
+
+{% block body %}
+    {% for item in data %}
+        <div>
+            <p>
+                <a href="/update/{{ item.id }}">{{ item.id }}.{{ item.title }}</a>
+            </p>
+        </div>
+    {% endfor %}
+{% endblock %}
